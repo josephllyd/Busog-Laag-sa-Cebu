@@ -1,66 +1,43 @@
 <!DOCTYPE html>
 <html>
+    
     <head>
-        <title> Sign Up - Create Your Account</title>
+        <title> Sign Up - Create your account</title>
         <link rel="stylesheet" href="styles/sign-up.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
         rel="stylesheet">
-        <style>
-            @media only screen and (min-width:61.9375em) and (max-width:85.625em) {
-                .nav-link {
-                    padding: 30px 15px;
-                    font-size: 15px;
-                }
-    
-                .logo-div {
-                    width: 20%;
-                }
-    
-                .button._20l-margin {
-                    font-size: 15px;
-                    padding: 10px;
-                    margin-left: 0px;
-                }
-            }
-        </style>
     </head>
+   
     <body>
         <main class = "container"> 
             <div class="left-section">
-                <div class="left-section-info">
-                    <p>Already have an account?</p>
-                    <p>Click Sign in below</p> 
-                </div>
-                <div class="signin-pan">
-                    <button type="submit" class="btn-signin-direct">
+                <div class="left-groups">
+                        <span class="bold-span">
+                            Already have an account? 
+                        </span>
+                    </div>
+                    <div class="left-groups">
+                        Click Sign in below!
+                    </div>
+                    <div class="signin-pan">
+
                         <a class="btn-signin-ref" target="_self" href="sign-in.html">
-                            SIGN IN
-                        </a>
-                    </button>
-                </div>
+                                Sign in
+                         </a>
+                         
+                    </div>
             </div>
             <div class="right-section">
                 <div class="form-info">
                     <h2>Sign Up</h2>
                     <p>Fill in this form to register and access Busog-Laag!</p>
                 </div>
+
                 <div class="form-groups">
-                   <div class="flex-row">
-                    
-                    <div class="col">
-                        <input class="control-box" type="text" placeholder="First Name"
-                        name="first_name" required="required">
-                    </div>
-
-                    <div class="col">
-                        <input class="control-box" type="text" placeholder="Last Name"
-                        name="last_name" required="required">
-                    </div>
-
-                   </div>
-
+                    <input class="control-box" type="text" placeholder="Username"
+                        name="user_name" required="required">
                 </div>
 
                 <div class="form-groups">
@@ -69,20 +46,18 @@
                 </div>
 
                 <div class="form-groups">
-                    <input class="control-box" type="text" placeholder="Password"
+                    <input class="control-box" type="password" placeholder="Password"
                         name="password" required="required">
                 </div>
-
                 <div class="form-groups">
-                    <input class="control-box" type="text" placeholder="Confirm Password"
-                        name="confirm_password" required="required">
+                    <input class="control-box" type="password" placeholder="Confirm Password"
+                        name="con_password" required="required">
                 </div>
-
                 <div class="form-groups">
                     <button type="submit" class="btn-signup">Sign Up</button>
                 </div>
 
             </div>
-        </main>
+        </main>       
     </body>
 </html>

@@ -8,16 +8,19 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
-    position: fixed;
 }
 
-
+.bold-span{
+    font-weight: bold;
+}
 
 .container{
     height: 550px;
-    min-width: 800px;
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 1fr 2fr;
+    max-width: 900px;
+    min-width: 550px;
+
 }
 
 .right-section{
@@ -35,6 +38,7 @@ body{
 }
 
 .form-groups{
+    display: flex;
     margin-top: 20px;
     height: 45px;
 }
@@ -73,272 +77,49 @@ body{
     font-family: Roboto, sans-serif;
 }
 
-.flex-row{
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-}
-
-
 .left-section{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     border-radius: 2px;
     border: none;
     background-color: rgb(50, 50, 50);
+    color: white;
 }
 
-.left-section-info{
-    margin-top: 20px;
-    font-weight: bold;
-    color: white;
+.left-groups{
+    height: 45px;
     text-align: center;
 }
 
 .signin-pan{
-    height: 450px;
-}
-
-.btn-signin-direct{
-    height: 40px;
-    width: 129px;
-    border-style: double;
-    background-color: rgb(95, 105, 251);
-    border-color: white;
-    border-radius: 20px;
-    position: fixed;
-    bottom: 300px;
-    left: 385px;
+    position: absolute;
+    bottom: 190px;
 }
 
 .btn-signin-ref{
     padding: 10px 30px 10px 30px;
-    border-radius: 20px;
-    text-decoration: none;
-    font-family: Roboto, sans-serif;
-    color: white;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+    width: 129px;
+    border-style: double;
+    border-width: 2px;
+    text-decoration: none;
+    background-color: rgb(95, 105, 251);
+    border-color: white;
+    border-radius: 20px;
 }
 
-.btn-signin-direct:hover{
+.btn-signin-ref:hover{
     background-color: rgba(95, 105, 251,0.5);
     cursor: pointer;
 }
 
-.btn-signin-direct:active{
+.btn-signin-ref:active{
     background-color: rgba(95, 105, 251,0.1);
-}
-
-@media screen and (max-width:991px) {
-    .w-container {
-        max-width: 728px
-    }
-
-    .w-hidden-main {
-        display: inherit !important
-    }
-
-    .w-hidden-medium {
-        display: none !important
-    }
-
-    .w-col-medium-1 {
-        width: 8.33333333%
-    }
-
-    .w-col-medium-2 {
-        width: 16.66666667%
-    }
-
-    .w-col-medium-3 {
-        width: 25%
-    }
-
-    .w-col-medium-4 {
-        width: 33.33333333%
-    }
-
-    .w-col-medium-5 {
-        width: 41.66666667%
-    }
-
-    .w-col-medium-6 {
-        width: 50%
-    }
-
-    .w-col-medium-7 {
-        width: 58.33333333%
-    }
-
-    .w-col-medium-8 {
-        width: 66.66666667%
-    }
-
-    .w-col-medium-9 {
-        width: 75%
-    }
-
-    .w-col-medium-10 {
-        width: 83.33333333%
-    }
-
-    .w-col-medium-11 {
-        width: 91.66666667%
-    }
-
-    .w-col-medium-12 {
-        width: 100%
-    }
-
-    .w-col-stack {
-        width: 100%;
-        left: auto;
-        right: auto
-    }
-}
-
-@media screen and (max-width:767px) {
-    .w-hidden-main {
-        display: inherit !important
-    }
-
-    .w-hidden-medium {
-        display: inherit !important
-    }
-
-    .w-hidden-small {
-        display: none !important
-    }
-
-    .w-row,
-    .w-container .w-row {
-        margin-left: 0;
-        margin-right: 0
-    }
-
-    .w-col {
-        width: 100%;
-        left: auto;
-        right: auto
-    }
-
-    .w-col-small-1 {
-        width: 8.33333333%
-    }
-
-    .w-col-small-2 {
-        width: 16.66666667%
-    }
-
-    .w-col-small-3 {
-        width: 25%
-    }
-
-    .w-col-small-4 {
-        width: 33.33333333%
-    }
-
-    .w-col-small-5 {
-        width: 41.66666667%
-    }
-
-    .w-col-small-6 {
-        width: 50%
-    }
-
-    .w-col-small-7 {
-        width: 58.33333333%
-    }
-
-    .w-col-small-8 {
-        width: 66.66666667%
-    }
-
-    .w-col-small-9 {
-        width: 75%
-    }
-
-    .w-col-small-10 {
-        width: 83.33333333%
-    }
-
-    .w-col-small-11 {
-        width: 91.66666667%
-    }
-
-    .w-col-small-12 {
-        width: 100%
-    }
-}
-
-@media screen and (max-width:479px) {
-    .w-container {
-        max-width: none
-    }
-
-    .w-hidden-main {
-        display: inherit !important
-    }
-
-    .w-hidden-medium {
-        display: inherit !important
-    }
-
-    .w-hidden-small {
-        display: inherit !important
-    }
-
-    .w-hidden-tiny {
-        display: none !important
-    }
-
-    .w-col {
-        width: 100%
-    }
-
-    .w-col-tiny-1 {
-        width: 8.33333333%
-    }
-
-    .w-col-tiny-2 {
-        width: 16.66666667%
-    }
-
-    .w-col-tiny-3 {
-        width: 25%
-    }
-
-    .w-col-tiny-4 {
-        width: 33.33333333%
-    }
-
-    .w-col-tiny-5 {
-        width: 41.66666667%
-    }
-
-    .w-col-tiny-6 {
-        width: 50%
-    }
-
-    .w-col-tiny-7 {
-        width: 58.33333333%
-    }
-
-    .w-col-tiny-8 {
-        width: 66.66666667%
-    }
-
-    .w-col-tiny-9 {
-        width: 75%
-    }
-
-    .w-col-tiny-10 {
-        width: 83.33333333%
-    }
-
-    .w-col-tiny-11 {
-        width: 91.66666667%
-    }
-
-    .w-col-tiny-12 {
-        width: 100%
-    }
 }

@@ -4,7 +4,7 @@ body{
     padding-top: 50px;
     padding-left: 300px;
     padding-right: 300px;
-    background-image: url('/images/cebu-cityline.jpg');
+    background-image: url('../images/cebu-cityline.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
